@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NativeChess</string>
+    <string name="continue_text">Continue</string>
+    <string name="new_game_text">New Game</string>
+    <string name="settings_text">Settings</string>
+
+    <string name="logo_desc">App icon</string>
+</resources>
