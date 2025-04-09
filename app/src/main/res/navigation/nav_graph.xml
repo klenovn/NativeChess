@@ -2,10 +2,15 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/menuFragment">
+    app:startDestination="@id/gameFragment">
 
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.klenovn.menu.presentation.MenuFragment"
         android:label="MenuFragment" />
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.klenovn.game.presentation.GameFragment"
+        android:label="GameFragment" />
 </navigation>
