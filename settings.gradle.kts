@@ -23,3 +23,4 @@ rootProject.name = "NativeChess"
 include(":app")
 include(":feature:menu")
 include(":feature:game")
+include(":core:navigation")
