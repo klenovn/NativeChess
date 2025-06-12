@@ -11,6 +11,7 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 
 navigation = "2.8.9"
+dagger = "2.56.2"
 
 [libraries]
 # Core
@@ -27,6 +28,10 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 
+# Dagger 2
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger"}
+dagger-compiler = { module= "com.google.dagger:dagger-compiler", version.ref="dagger"}
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
@@ -34,3 +39,6 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 # Navigation
 navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+
+[bundles]
+navigation = ["androidx-navigation-fragment-ktx", "androidx-navigation-ui-ktx"]
